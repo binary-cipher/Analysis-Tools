@@ -1,0 +1,52 @@
+# Over All bootstrapper to get tools installed on a system
+
+## get fresh install of kali setup 
+#######################################
+#
+#         here
+#
+#
+#
+####################
+# Software installer
+####################
+
+#######################################
+# Viper
+# https://viper.li/en/latest/installation/index.html
+####################
+# Prereqs 
+## Might need at add python envs 
+sudo apt-get install git gcc python3-dev python3-pip
+sudo apt-get install libssl-dev swig libffi-dev ssdeep libfuzzy-dev unrar p7zip-full
+
+# Installer
+cd /opt
+git clone https://github.com/viper-framework/viper.git
+cd viper
+git submodule init
+git submodule update
+sudo pip3 install setuptools wheel --upgrade
+sudo pip3 install .
+
+
+#######################################
+# oletools
+# https://github.com/decalage2/oletools
+####################
+# install with apt
+apt install python-oletools
+
+
+#######################################
+# metasm
+# https://github.com/jjyg/metasms
+####################
+# Installer
+git clone https://github.com/jjyg/metasm.git
+# Post needs
+https://github.com/jjyg/metasm/blob/master/INSTALL
+
+
+
+
